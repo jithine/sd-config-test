@@ -2,7 +2,7 @@ jobs:
   main:
     settings:
         slack:
-            channel: [SUCCESS]
+            channels: [SUCCESS]
     requires: [~pr, ~commit]
     image: node:12
     steps:
