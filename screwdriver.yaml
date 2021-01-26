@@ -3,4 +3,4 @@ jobs:
     requires: [~pr, ~commit]
     image: node:12
     steps:
-      - dummy
+     - dummy: 
