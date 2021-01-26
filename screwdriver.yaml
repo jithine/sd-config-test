@@ -1,5 +1,5 @@
 jobs:
-  main:
+  new-main:
     settings:
         slack:
             channel: [SUCCESS]
