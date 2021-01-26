@@ -1,6 +1,9 @@
 jobs:
   main:
+    settings:
+        slack:
+            staus: SUCCESS
     requires: [~pr, ~commit]
     image: node:12
     steps:
-     - dummy: 
+      - dummy: echo "dummy"
