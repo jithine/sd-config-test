@@ -7,3 +7,4 @@ jobs:
     image: node:12
     steps:
       - dummy: echo "dummy"
+      - meta: meta dump > $SD_ARTIFACTS_DIR/meta.json
