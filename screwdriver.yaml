@@ -8,3 +8,6 @@ jobs:
     steps:
       - dummy: echo "dummy"
       - meta: meta dump > $SD_ARTIFACTS_DIR/meta.json
+      - env: export FACTORY_BUILD_STATUS=success
+      - teardown-first: echo "first"
+      - teardown-env: echo $FACTORY_BUILD_STATUS
