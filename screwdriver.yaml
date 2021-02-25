@@ -9,6 +9,6 @@ jobs:
       - dummy: echo "dummy"
       - meta: meta dump > $SD_ARTIFACTS_DIR/meta.json
       - env: export FACTORY_BUILD_STATUS=success
-      - dummy-2: echo "dummy 2"
+#      - dummy-2: echo "dummy 2"
       - teardown-first: echo "first"
       - teardown-env: echo $FACTORY_BUILD_STATUS
