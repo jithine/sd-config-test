@@ -19,5 +19,5 @@ jobs:
           echo "first"
           sleep 1m
       - teardown-env: |
-        echo $FACTORY_BUILD_STATUS
-        echo $ABORT_BUILD_STATUS
+          echo $FACTORY_BUILD_STATUS
+          echo $ABORT_BUILD_STATUS
