@@ -13,7 +13,7 @@ jobs:
       - env: export FACTORY_BUILD_STATUS=success
       - sleep: |
           export ABORT_BUILD_STATUS=aborted
-          #while true; do sleep 1; echo "sleep"; done
+          while true; do sleep 1; echo "sleep"; done
 #      - dummy-2: echo "dummy 2"
       - teardown-first: |
           echo "first"
