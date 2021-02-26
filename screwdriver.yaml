@@ -12,7 +12,7 @@ jobs:
       - meta: meta dump > $SD_ARTIFACTS_DIR/meta.json
       - env: export FACTORY_BUILD_STATUS=success
       - sleep: |
-          ABORT_BUILD_STATUS=aborted
+          export ABORT_BUILD_STATUS=aborted
           #while true; do sleep 1; echo "sleep"; done
 #      - dummy-2: echo "dummy 2"
       - teardown-first: |
