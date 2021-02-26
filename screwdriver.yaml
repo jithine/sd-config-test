@@ -9,6 +9,9 @@ jobs:
       - dummy: echo "dummy"
       - meta: meta dump > $SD_ARTIFACTS_DIR/meta.json
       - env: export FACTORY_BUILD_STATUS=success
+      - sleep: while true; do sleep 1; echo "sleep"; done
 #      - dummy-2: echo "dummy 2"
-      - teardown-first: echo "first"
+      - teardown-first: |
+          echo "first"
+          sleep 1m
       - teardown-env: echo $FACTORY_BUILD_STATUS
