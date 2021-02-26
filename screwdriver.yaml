@@ -17,7 +17,7 @@ jobs:
 #      - dummy-2: echo "dummy 2"
       - teardown-first: |
           echo "first"
-          #sleep 1m
+          sleep 1m
       - teardown-env: |
           echo $FACTORY_BUILD_STATUS
           echo $ABORT_BUILD_STATUS
