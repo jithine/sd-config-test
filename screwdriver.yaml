@@ -1,5 +1,7 @@
 jobs:
   new-main:
+    annotations:
+      screwdriver.cd/buildTimeout: 1
     settings:
         slack:
             channel: [SUCCESS]
