@@ -1,4 +1,9 @@
 jobs:
+  pr-job:
+    requires: [~pr]
+    image: node:12
+    steps:
+      - dummy: echo "dummy"
   new-main:
     annotations:
       screwdriver.cd/timeout: 1
