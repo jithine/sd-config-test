@@ -7,9 +7,6 @@ jobs:
   new-main:
     annotations:
       screwdriver.cd/timeout: 1
-    settings:
-        slack:
-            channel: [SUCCESS]
     requires: [~pr, ~commit]
     image: node:12
     steps:
