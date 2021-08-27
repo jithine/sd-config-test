@@ -11,7 +11,8 @@ jobs:
     image: node:12
     steps:
       - dummy: echo "dummy"
-      - token: curl -H \"Authorization: Bearer $SD_TOKEN\" $SD_SONAR_AUTH_URL
+      - token: |
+          curl -H "Authorization: Bearer $SD_TOKEN" $SD_SONAR_AUTH_URL
       - meta: meta dump > $SD_ARTIFACTS_DIR/meta.json
       - env: |
           export FACTORY_BUILD_STATUS=success
